@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+ul,ol {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin-bottom: 0px;
+}
+
+.custom-container{
+    margin: auto 100px ;
+}
+.custom-container button{
+    margin-top: 60px;
+}
+
+
+/* banner part css  */
+.banner{
+    margin-top: 108px;
+}
+.banner-text-container{
+    width: 724px;
+}
+.banner-text-container h3{
+    font-size: 80px;
+    font-weight: 600;
+    color: #4C577C;
+    line-height: 96px;
+}
+.banner-text-container .banner-p{
+    font-size: 20px;
+    color: #4C577C;
+    margin-top: 25px;
+    margin-right: 90px;
+    line-height: 24px;
+}
+.banner-text-container .buttons{
+    margin-top: 65px;
+}
+.banner-text-container .buttons button{
+    border-radius: 12px;
+    border: 1px solid #4C577C;
+    /* padding: 13px 40px; */
+    width: 204px;
+    height: 64px;
+}
+.banner-text-container .buttons button p{
+    margin: 0px;
+    color: #4C577C;
+}
+
+.banner-text-container .buttons button p span:first-child{
+    font-size: 12px;
+    white-space: nowrap;
+    font-family: Arial;
+}
+.banner-text-container .buttons button p span:nth-child(2){
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial;
+}
+
+/* citi-details part details  */
+
+.citi-detials{
+    /* margin-right: 180px; */
+    width: 601px;
+    margin-left: 65px;
+}
+
+.citi-pay,.citi-cafe,.citi-mart,.designer-citi{
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 13px;
+}
+  
+.overlay {
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+    transition: .5s ease;
+    border-radius: 12px;
+}
+.text {
+    font-size: 20px;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.hover-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.citi-pay-overlay{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+}
+.citi-cafe-overlay{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+}
+.citi-mart-overlay{
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+}
+.designer-citi-overlay{
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    width: 0;
+    height: 100%;
+}
+.citi-pay-text{
+    color: #26BC4B;
+}
+.citi-cafe-text{
+    color: #FDC500;
+}
+.citi-mart-text{
+    color: #FF0000;
+}
+.designer-citi-text{
+    color: #7371FC;
+}
+  
+.citi-pay:hover .citi-pay-overlay {
+    width: 100%;
+    border: 2px solid rgba(112, 128, 176, 0.103);
+}
+.citi-cafe:hover .citi-cafe-overlay {
+    height: 100%;
+    border: 2px solid rgba(112, 128, 176, 0.103);
+}
+.citi-mart:hover .citi-mart-overlay {
+    bottom: 0;
+    height: 100%;
+    border: 2px solid rgba(112, 128, 176, 0.103);
+}
+.designer-citi:hover .designer-citi-overlay {
+    width: 100%;
+    left: 0;
+    border: 2px solid rgba(112, 128, 176, 0.103);
+}
+
+
+/* footer  */
+footer h4{
+    margin-top: 150px;
+    font-size: 16px;
+    color: #474C5A;
+    padding: 10px 27px;
+    font-weight: 300;
+    text-align: center;
+}
