@@ -157,20 +157,24 @@ p{
 .citi-pay:hover .citi-pay-overlay {
     width: 100%;
     border: 2px solid rgba(112, 128, 176, 0.103);
+    cursor: pointer;
 }
 .citi-cafe:hover .citi-cafe-overlay {
     height: 100%;
     border: 2px solid rgba(112, 128, 176, 0.103);
+    cursor: pointer;
 }
 .citi-mart:hover .citi-mart-overlay {
     bottom: 0;
     height: 100%;
     border: 2px solid rgba(112, 128, 176, 0.103);
+    cursor: pointer;
 }
 .designer-citi:hover .designer-citi-overlay {
     width: 100%;
     left: 0;
     border: 2px solid rgba(112, 128, 176, 0.103);
+    cursor: pointer;
 }
 
 
