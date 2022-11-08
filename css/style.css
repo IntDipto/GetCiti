@@ -30,6 +30,7 @@ p {
 /* banner part css  */
 .banner {
     margin-top: 108px;
+    margin-bottom: 40px;
 }
 
 .banner-text-container {
@@ -212,7 +213,7 @@ p {
 /* footer  */
 footer h4 {
     color: #474C5A;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     font-size: 16px;
     left: 50%;
@@ -241,6 +242,7 @@ footer h4 {
 
     .banner {
         margin-top: 4.6vw;
+        margin-bottom: 40px;
     }
 
     .banner-text-container {
@@ -342,7 +344,7 @@ footer h4 {
     footer h4 {
         font-size: 3.125vw;
         color: #474C5A;
-        position: absolute;
+        position: fixed;
         bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
