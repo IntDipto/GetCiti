@@ -22,7 +22,7 @@ p {
     margin: auto 100px;
 }
 
-.custom-container .logo {
+.custom-container .nav-logo {
     margin-top: 60px;
 }
 
@@ -37,10 +37,13 @@ p {
 }
 
 .banner-text-container h3 {
-    font-size: 80px;
+    font-size: 4.16vw;
     font-weight: 600;
     color: #4C577C;
-    line-height: 96px;
+    line-height: 120%;
+}
+.mobile-break{
+    display: none;
 }
 
 .banner-text-container .banner-p {
@@ -48,11 +51,11 @@ p {
     color: #4C577C;
     margin-top: 25px;
     margin-right: 90px;
-    line-height: 24px;
+    line-height: 120%;
 }
 
 .banner-text-container .buttons {
-    margin-top: 65px;
+    margin-top: 125px;
 }
 
 .banner-text-container .buttons button {
@@ -60,6 +63,7 @@ p {
     border: 1px solid #4C577C;
     width: 204px;
     height: 64px;
+    gap:.83vw;
 }
 
 .banner-text-container .buttons button p {
@@ -82,9 +86,11 @@ p {
 /* citi-details part details  */
 
 .citi-detials {
-    /* margin-right: 180px; */
     width: 601px;
     margin-left: 65px;
+}
+.citi-cafe, .designer-citi{
+    margin-top: 24px;
 }
 
 .citi-pay,
@@ -205,21 +211,36 @@ p {
 
 /* footer  */
 footer h4 {
-    margin-top: 150px;
-    font-size: 16px;
     color: #474C5A;
-    padding: 10px 27px;
-    font-weight: 300;
-    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    font-size: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    padding: 5px 0px;
 }
 
 @media (min-width: 320px) and (max-width:576px) {
+
+    .custom-container .nav-logo {
+        margin-top: 7.3vw;
+    }
+    .nav-logo svg{
+        width: 75px;
+    }
+
+    .nav-logo {
+        display: flex;
+        justify-content: center;
+    }
+
     .custom-container {
-        margin: auto 30px;
+        margin: auto 12px;
     }
 
     .banner {
-        margin-top: 40px;
+        margin-top: 4.6vw;
     }
 
     .banner-text-container {
@@ -227,51 +248,128 @@ footer h4 {
     }
 
     .banner-text-container h3 {
-        font-size: 36px;
-        line-height: 120%;
+        text-align: center;
+        font-size: 6.25vw;
+    }
+
+    .mobile-break{
+        display: block;
     }
 
     .banner-text-container .banner-p {
-        font-size: 15px;
-        margin-top: 20px;
+        font-size: 3.12vw;
+        margin-top: 8px;
         margin-right: 0px;
-        line-height: 110%;
+        line-height: 120%;
+        text-align: center;
+        padding: 0% 5%;
     }
 
     .banner-text-container .buttons {
-        margin-top: 25px;
+        margin-top: 7.5vw;
+        justify-content: center;
     }
 
     .banner-text-container .buttons button {
-        height: 54px;
+        height: 9.87vw;
+        width: 31.65vw;
+        border-radius: 1.83vw;
+        gap: 2.43vw;
+    }
+    .banner-text-container .buttons button svg{
+        width: 4.06vw;
     }
 
     .banner-text-container .buttons button p span:first-child {
-        font-size: 10px;
+        font-size: 1.87vw;
     }
 
     .banner-text-container .buttons button p span:nth-child(2) {
-        font-size: 12px;
+        font-size: 2.5vw;
     }
 
     .citi-detials {
         width: 100%;
         margin-left: 0px;
-        margin-top: 40px;
+        margin-top: 7.5vw;
     }
 
-    .citi-mart {
-        margin-top: 25px;
+    .hover-part {
+        gap: 2.2vw;
+    }
+    .hover-part svg{
+        width: 19.32vw;
+        height: 7.5vw;
+    }
+    .hover-part span{
+        font-size: 2.50vw;
+    }
+    .hover-part span svg{
+       width: 3.75vw; 
+       height: 3.75vw;
+    }
+    .designer-citi-text .hover-part .desinger-citi-svg{
+        width:31.25vw;
     }
 
+    .overlay{
+        border: 1px solid rgba(112, 128, 176, 0.103);
+    }
+
+    .citi-pay-overlay {
+        width: 100%;
+    }
+    .citi-cafe-overlay {
+        height: 100%;
+    }
+    .citi-mart-overlay {
+        bottom: 0;
+        height: 100%;
+    }
+    
+    .designer-citi-overlay {
+        left:0;
+        width: 100%;
+    }
+
+    .citi-detials .row {
+        --bs-gutter-x: 3.2vw;
+    }
+    .citi-cafe, .designer-citi{
+        margin-top:  3.2vw;
+    }
+
+    footer h4 {
+        font-size: 3.125vw;
+        color: #474C5A;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        padding: 5px 0px;
+    }
 }
 
 @media (min-width: 577px) and (max-width:767px){
-    .custom-container {
-        margin: auto 40px;
+    .custom-container .nav-logo {
+        margin-top: 7.3vw;
     }
+    .nav-logo svg{
+        width: 75px;
+    }
+
+    .nav-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .custom-container {
+        margin: auto 12px;
+    }
+
     .banner {
-        margin-top: 48px;
+        margin-top: 4.6vw;
     }
 
     .banner-text-container {
@@ -279,26 +377,98 @@ footer h4 {
     }
 
     .banner-text-container h3 {
-        font-size: 55px;
-        line-height: 120%;
+        text-align: center;
+        font-size: 6.25vw;
     }
+
+    .mobile-break{
+        display: block;
+    }
+
     .banner-text-container .banner-p {
-        font-size: 18px;
+        font-size: 3.12vw;
+        margin-top: 8px;
         margin-right: 0px;
         line-height: 120%;
+        text-align: center;
+        padding: 0% 5%;
     }
+
     .banner-text-container .buttons {
-        margin: 35px 0px;
+        margin-top: 7.5vw;
+        justify-content: center;
+    }
+
+    .banner-text-container .buttons button {
+        height: 9.87vw;
+        width: 31.65vw;
+        border-radius: 1.83vw;
+        gap: 2.43vw;
+    }
+    .banner-text-container .buttons button svg{
+        width: 4.06vw;
+    }
+
+    .banner-text-container .buttons button p span:first-child {
+        font-size: 1.87vw;
+    }
+
+    .banner-text-container .buttons button p span:nth-child(2) {
+        font-size: 2.5vw;
     }
 
     .citi-detials {
         width: 100%;
         margin-left: 0px;
-        margin-top: 40px;
+        margin-top: 7.5vw;
     }
-    .citi-mart {
-        margin-top: 35px;
+
+    .hover-part {
+        gap: 2.2vw;
     }
+    .hover-part svg{
+        width: 19.32vw;
+        height: 7.5vw;
+    }
+    .hover-part span{
+        font-size: 2.50vw;
+    }
+    .hover-part span svg{
+       width: 3.75vw; 
+       height: 3.75vw;
+    }
+    .designer-citi-text .hover-part .desinger-citi-svg{
+        width:31.25vw;
+    }
+
+    .overlay{
+        border: 1px solid rgba(112, 128, 176, 0.103);
+    }
+
+    .citi-pay-overlay {
+        width: 100%;
+    }
+    .citi-cafe-overlay {
+        height: 100%;
+    }
+    .citi-mart-overlay {
+        bottom: 0;
+        height: 100%;
+    }
+    
+    .designer-citi-overlay {
+        left:0;
+        width: 100%;
+    }
+
+    .citi-detials .row {
+        --bs-gutter-x: 3.2vw;
+    }
+    .citi-cafe, .designer-citi{
+        margin-top:  3.2vw;
+    }
+
+    
 }
 
 @media (min-width: 768px) and (max-width:991px){
@@ -308,10 +478,29 @@ footer h4 {
     .banner-text-container {
         width: 100%;
     }
-    .banner-text-container h3 {
-        font-size: 63px;
-        line-height: 120%;
+    overlay{
+        border: 1px solid rgba(112, 128, 176, 0.103);
     }
+    .overlay{
+        border: 1px solid rgba(112, 128, 176, 0.103);
+    }
+
+    .citi-pay-overlay {
+        width: 100%;
+    }
+    .citi-cafe-overlay {
+        height: 100%;
+    }
+    .citi-mart-overlay {
+        bottom: 0;
+        height: 100%;
+    }
+    
+    .designer-citi-overlay {
+        left:0;
+        width: 100%;
+    }
+
     .banner-text-container .banner-p {
         font-size: 18px;
         margin-right: 0px;
@@ -327,6 +516,29 @@ footer h4 {
     }
 }
 @media (min-width: 992px) and (max-width:1199px){
+    .banner-text-container .buttons {
+        margin-top: 7.5vw;
+    }
+    .overlay{
+        border: 1px solid rgba(112, 128, 176, 0.103);
+    }
+
+    .citi-pay-overlay {
+        width: 100%;
+    }
+    .citi-cafe-overlay {
+        height: 100%;
+    }
+    .citi-mart-overlay {
+        bottom: 0;
+        height: 100%;
+    }
+    
+    .designer-citi-overlay {
+        left:0;
+        width: 100%;
+    }
+
     .banner {
         margin-top: 60px;
     }
@@ -340,16 +552,17 @@ footer h4 {
     }
 }
 @media (min-width: 1200px) and (max-width:1399px){
+
     .banner {
         margin-top: 60px;
     }
     .banner-text-container {
         width: 100%;
     }
-    .banner-text-container h3 {
+    /* .banner-text-container h3 {
         font-size: 60px;
         line-height: 120%;
-    }
+    } */
     .banner-text-container .banner-p {
         font-size: 18px;
         margin-right: 0px;
